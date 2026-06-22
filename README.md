@@ -1,12 +1,20 @@
+---
+title: Fatima's Assistant
+emoji: 💬
+colorFrom: blue
+colorTo: purple
+sdk: docker
+pinned: false
+short_description: RAG-based chatbot using personal CV
+---
+
 # Fatima's Assistant
 
 A **Retrieval-Augmented Generation (RAG)** chatbot that answers questions about **Fatima Jawad** using only her personal CV. Built for an NLP course assignment demonstrating document indexing, vector search, prompt engineering, and deployment.
 
 ## Live Demo
 
-**Deployment URL:** `https://huggingface.co/spaces/YOUR_USERNAME/fatimas-assistant`
-
-> Replace with your Hugging Face Space URL after deployment (see [Deployment](#deployment) below).
+**Deployment URL:** https://huggingface.co/spaces/Fatima2528/fatimas-assistant
 
 ## Features
 
@@ -128,20 +136,9 @@ Open **http://127.0.0.1:8000** in your browser.
 
 Deploy on **Hugging Face Spaces** (Docker). Vercel is not suitable for this Python ML backend.
 
-### Step-by-step
+Live app: https://huggingface.co/spaces/Fatima2528/fatimas-assistant
 
-1. Create an account at [huggingface.co](https://huggingface.co).
-2. Click **New Space** → Name: `fatimas-assistant` → SDK: **Docker** → Create.
-3. Upload or git-push these files:
-   - `app.py`, `Dockerfile`, `requirements-deploy.txt`
-   - `frontend/`, `data/`, `vectorstore/`
-   - `README.md`
-4. Go to Space **Settings → Repository secrets** and add:
-   - Name: `GROQ_API_KEY`
-   - Value: your Groq API key
-5. Wait for the Docker build to finish (check **Logs** tab).
-6. Your live URL will be:
-   `https://huggingface.co/spaces/YOUR_USERNAME/fatimas-assistant`
+Set `GROQ_API_KEY` in Space **Settings → Repository secrets**.
 
 ### Troubleshooting
 
