@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatima's Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Fatima's Assistant</h1>
+      <p>Ask anything about Fatima's CV</p>
+    </header>
+
+    <main id="chat" class="chat" aria-live="polite"></main>
+
+    <form id="form" class="input-bar">
+      <input
+        id="input"
+        type="text"
+        placeholder="Type your question..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit" id="send">Send</button>
+    </form>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
